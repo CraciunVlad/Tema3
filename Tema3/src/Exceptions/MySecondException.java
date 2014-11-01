@@ -48,6 +48,7 @@ public class MySecondException extends FileNotFoundException {
 	 */
 	public String toString() {
 		return message;
+		
 	}
 
 }
