@@ -6,6 +6,7 @@ import Mammals.Human;
 
 /**
  * This is the main class
+ * 
  * @author KMD
  * 
  */
@@ -13,24 +14,34 @@ public class Main {
 
 	/**
 	 * @param args
-	 * @throws MyFirstException 
+	 * 
 	 */
-	public static void main(String[] args) throws MyFirstException {
+	public static void main(String[] args) {
 
 		Human Ion = new Human("Ion");
 		Bear Marin = new Bear("Marin");
 
 		Ion.markTerritory();
-		Ion.eat();
-
-		Marin.eat();
+		try {
+			Ion.eat();
+		} catch (MyFirstException e) {
+			System.out.println("Exception at eat(): " + e.getMessage());
+		}
+		try {
+			Marin.eat();
+		} catch (MyFirstException e) {
+			System.out.println("Exception at eat(): " + e.getMessage());
+		}
 		Marin.markTerritory();
 		Marin.deepSleep();
 		Marin.fullHibernation();
-		
-		Bear Anton=new Bear();
-		Anton.eat();
-		
+
+		Bear Anton = new Bear();
+		try {
+			Anton.eat();
+		} catch (MyFirstException e) {
+			System.out.println("Exception at eat(): " + e.getMessage());
+		}
 
 	}
 
