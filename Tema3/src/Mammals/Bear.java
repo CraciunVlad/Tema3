@@ -15,7 +15,7 @@ import Interfaces.Hibernate;
 public class Bear extends Mammal implements Hibernate {
 
 	/**
-	 * 
+	 * this is the no argument constructor for the Bear class
 	 */
 	public Bear() {
 		super();

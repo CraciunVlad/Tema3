@@ -3,6 +3,8 @@
  */
 package Mammals;
 
+import Exceptions.MyFirstException;
+
 /**
  * This is the abstract class Mammal
  * 
@@ -47,13 +49,15 @@ public abstract class Mammal {
 	/**
 	 * This is an abstract method for marking territory
 	 */
-	public abstract void markTerritory();
+	public abstract void markTerritory ();
 
 	/**
 	 * This method implements the eating method of any mammal
 	 */
-	public void eat() {
-		System.out.println("NumNumNum...belly full :)");
+	public void eat() throws MyFirstException{
+		if(this.getName()=="")
+			throw new MyFirstException("The name of the mammal was not initialized");
+		System.out.println("NumNumNum..."+this.getName()+"'s belly is full :)");
 	}
 
 }

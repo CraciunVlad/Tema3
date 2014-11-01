@@ -1,5 +1,6 @@
 package Main;
 
+import Exceptions.MyFirstException;
 import Mammals.Bear;
 import Mammals.Human;
 
@@ -12,8 +13,9 @@ public class Main {
 
 	/**
 	 * @param args
+	 * @throws MyFirstException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MyFirstException {
 
 		Human Ion = new Human("Ion");
 		Bear Marin = new Bear("Marin");
@@ -25,6 +27,10 @@ public class Main {
 		Marin.markTerritory();
 		Marin.deepSleep();
 		Marin.fullHibernation();
+		
+		Bear Anton=new Bear();
+		Anton.eat();
+		
 
 	}
 

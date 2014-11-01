@@ -1,5 +1,7 @@
 package Mammals;
 
+//import Exceptions.MyFirstException;
+
 /**
  * This is the human class
  * 
@@ -32,6 +34,8 @@ public class Human extends Mammal {
 	 * @see Mammals.Mammal#markTerritory()
 	 */
 	public void markTerritory() {
+		
+		
 
 		System.out.println("I am " + getName()
 				+ " and everithing inside this fence in mine ");
