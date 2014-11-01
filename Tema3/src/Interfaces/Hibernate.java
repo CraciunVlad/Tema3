@@ -1,8 +1,6 @@
 package Interfaces;
 
 /**
- * 
- * 
  * This is an interface for all the mammals who hibernate
  */
 public interface Hibernate {

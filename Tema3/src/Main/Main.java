@@ -1,6 +1,7 @@
 package Main;
 
 import Exceptions.MyFirstException;
+import Exceptions.MySecondException;
 import Mammals.Bear;
 import Mammals.Human;
 
@@ -26,6 +27,20 @@ public class Main {
 			Ion.eat();
 		} catch (MyFirstException e) {
 			System.out.println("Exception at eat(): " + e.getMessage());
+		}
+		try {
+			String file = null;
+			Ion.read(file);
+		}
+
+		catch (MySecondException e) {
+			System.out.println("Exception at read(): " + e.getMessage());
+		}
+		try {
+
+			Ion.read("file.txt");
+		} catch (MySecondException e) {
+			System.out.println("Exception at read(): " + e.getMessage());
 		}
 		try {
 			Marin.eat();
