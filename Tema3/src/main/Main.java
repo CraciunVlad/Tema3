@@ -1,9 +1,9 @@
-package Main;
+package main;
 
-import Exceptions.MyFirstException;
-import Exceptions.MySecondException;
-import Mammals.Bear;
-import Mammals.Human;
+import mammals.Bear;
+import mammals.Human;
+import exceptions.MyFirstException;
+import exceptions.MySecondException;
 
 /**
  * This is the main class

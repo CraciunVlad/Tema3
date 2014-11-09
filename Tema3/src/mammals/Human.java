@@ -1,10 +1,11 @@
-package Mammals;
+package mammals;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import Exceptions.MySecondException;
+import exceptions.MySecondException;
+
 
 /**
  * This is the human class
@@ -32,7 +33,7 @@ public class Human extends Mammal {
 	/**
 	 * The markTherritory methode
 	 * 
-	 * @see Mammals.Mammal#markTerritory()
+	 * @see mammals.Mammal#markTerritory()
 	 */
 	public void markTerritory() {
 

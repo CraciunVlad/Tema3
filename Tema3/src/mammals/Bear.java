@@ -1,9 +1,9 @@
 /**
  * 
  */
-package Mammals;
+package mammals;
 
-import Interfaces.Hibernate;
+import interfaces.Hibernation;
 
 /**
  * This is the Bear class that extends Mammal and implements the Hibernate
@@ -12,7 +12,7 @@ import Interfaces.Hibernate;
  * @author KMD
  * 
  */
-public class Bear extends Mammal implements Hibernate {
+public class Bear extends Mammal implements Hibernation {
 
 	/**
 	 * this is the no argument constructor for the Bear class

@@ -1,9 +1,9 @@
-package Interfaces;
+package interfaces;
 
 /**
  * This is an interface for all the mammals who hibernate
  */
-public interface Hibernate {
+public interface Hibernation {
 
 	/**
 	 * This is the deepSleep method

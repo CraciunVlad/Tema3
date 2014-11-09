@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Exceptions;
+package exceptions;
 
 /**
  * This is MyFirstException Class that extends the Exception class

@@ -1,9 +1,9 @@
 /**
  * @author KMD
  */
-package Mammals;
+package mammals;
 
-import Exceptions.MyFirstException;
+import exceptions.MyFirstException;
 
 /**
  * This is the abstract class Mammal
